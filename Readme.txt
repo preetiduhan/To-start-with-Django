@@ -33,5 +33,61 @@ This plugin provides the features:
     Change action shortcuts in Eclipse’s Keys preferences page
     Works across all Eclipse editors
     Preferences support to fine-tune output for each syntax and add new abbreviations and snippets
+    
+    python manage.py migrate
+    
+    python manage.py createsuperuser
+    
+    sudo fuser -k 8000/tcp. This should kill all the processes associated with port 8000.
+    
+    or netstat -nlpt
+    
+    (trydjango) [preeti@oc1238606604 src]$ python manage.py
+
+Type 'manage.py help <subcommand>' for help on a specific subcommand.
+
+Available subcommands:
+
+[auth]
+    changepassword
+    createsuperuser
+
+[contenttypes]
+    remove_stale_contenttypes
+
+[django]
+    check
+    compilemessages
+    createcachetable
+    dbshell
+    diffsettings
+    dumpdata
+    flush
+    inspectdb
+    loaddata
+    makemessages
+    makemigrations
+    migrate
+    sendtestemail
+    shell
+    showmigrations
+    sqlflush
+    sqlmigrate
+    sqlsequencereset
+    squashmigrations
+    startapp
+    startproject
+    test
+    testserver
+
+[sessions]
+    clearsessions
+
+[staticfiles]
+    collectstatic
+    findstatic
+    runserver
+    
+    
 
 
