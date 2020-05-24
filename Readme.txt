@@ -34,9 +34,11 @@ This plugin provides the features:
     Works across all Eclipse editors
     Preferences support to fine-tune output for each syntax and add new abbreviations and snippets
     
-    python manage.py migrate
+python manage.py migrate
+
+python manage.py makemigrations
     
-    python manage.py createsuperuser
+python manage.py createsuperuser
     
     sudo fuser -k 8000/tcp. This should kill all the processes associated with port 8000.
     
@@ -88,6 +90,22 @@ Available subcommands:
     findstatic
     runserver
     
-    
+Queryset django:
+(trydjango) [preeti@oc1238606604 src]$ python manage.py shell
+Python 3.6.8 (default, Jun 11 2019, 15:15:01) 
+[GCC 4.8.5 20150623 (Red Hat 4.8.5-39)] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from posts.models import Post
+>>> Post.objects.all()
+<QuerySet [<Post: Try Django 2.1>, <Post: Bootstrap learn>, <Post: learn javascript new>]>
+>>> Post.objects.filter(title='javascript')
+<QuerySet []>
+>>> Post.objects.filter(title='javascript')
+<QuerySet []>
+>>> Post.objects.filter(title__icontains='javascript')
+<QuerySet [<Post: learn javascript new>]>
+>>> 
+
 
 
